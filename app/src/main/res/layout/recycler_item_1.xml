@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:layout_height="95dp"
+    app:cardCornerRadius="4dp">
+    <RelativeLayout
+        android:id="@+id/layout_ls_first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/location_city_rv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金苑路"
+            android:textSize="35sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black" />
+        <ImageView
+            android:id="@+id/isPosition"
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/location_city_rv">
+        </ImageView>
+        <TextView
+            android:id="@+id/location_province_rv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location_city_rv"
+            android:text="大兴区,北京"
+            android:textSize="22sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#607B8B" />
+
+        <ImageView
+            android:id="@+id/remove_rv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/remove">
+        </ImageView>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

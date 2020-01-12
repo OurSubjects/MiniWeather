@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    <RelativeLayout
+        android:id="@+id/locLayout_first"
+        android:layout_width="match_parent"
+        android:layout_height="45.0dp"
+        android:background="#2196F3">
+        <ImageView
+            android:id="@+id/loc_back"
+            android:layout_width="45.0dp"
+            android:layout_height="45.0dp"
+            android:src="@drawable/location_back"/>
+    </RelativeLayout>
+    <com.example.myapplication.myClass.ClearEditTextView
+        android:id="@+id/search_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/locLayout_first"
+        android:hint="搜索城市"
+        android:layout_margin="4.0dp"
+        android:drawableLeft="@drawable/magnifying_glass"
+        android:drawablePadding="6dp"
+        android:singleLine="true"
+        android:background="@drawable/contact_search_box_edittext_keyword_background"
+        android:textColor="#ff000000"
+        android:textColorHint="#ffcccccc"
+        android:textSize="15sp"
+        >
+    </com.example.myapplication.myClass.ClearEditTextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_city">
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+    </LinearLayout>
+
+
+</RelativeLayout>
